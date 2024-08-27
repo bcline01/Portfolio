@@ -4,7 +4,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Portfolio />
+      <Portfolio> 
+        <h1>title</h1>
+      </Portfolio>
       <Footer />
     </div>
   );
