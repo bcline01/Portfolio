@@ -49,16 +49,22 @@ const projects = [
 
 ]
 
-function Portfolio({projects}) {
+function Portfolio() {
   return (
-    <div className='portfolio'> 
+    <div className='portfolio'>
+      <div className="container-fluid">
+        <div className="row">
     {projects.map((project) => (
+      <div key={project.id} className="col-lg-4 col-md-6 mb-44">
       <Card key={project.id}
       image={project.image}
       title={project.title}
       link={project.link}
       />
+      </div>
     ))}
+    </div>
+    </div>
     </div>
     );
   }
