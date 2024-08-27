@@ -1,42 +1,49 @@
 import Card from './Card';
+import React from 'react';
+import animalImage from '../assets/animal.png'
+import weatherImage from '../assets/weather.png'
+import employeeImage from '../assets/employee.png'
+import vehicleImage from '../assets/vehicle.png'
+import puzzleImage from '../assets/puzzle.png'
+import readmeImage from '../assets/readme.png'
 
 
 
 const projects = [
   {
     id: 'p1',
-    image: 'animal.png',
-    title: 'string',
+    image: animalImage,
+    title: 'Snuggle Squad',
     link: 'https://github.com/bcline01/Animal-Shelter-Project1'
   },
   {
     id: 'p2',
-    image:'',
-    title: 'string',
+    image: weatherImage,
+    title: 'Weather Forecase APP',
     link: 'https://github.com/bcline01/weatherAPP'
   },
   {
     id: 'p3',
-    image: '',
-    title: 'string',
+    image: employeeImage,
+    title: 'Postgres APP',
     link: 'https://github.com/bcline01/employee_tracker'
   },
   {
     id: 'p4',
-    image: '',
-    title: 'string',
+    image: vehicleImage,
+    title: 'Vehicle Builder',
     link: 'https://github.com/bcline01/vehicle-builder'
   },
   {
     id: 'p5',
-    image: '',
-    title: 'string',
+    image: puzzleImage,
+    title: 'Puzzle Pairs',
     link: 'https://github.com/bcline01/puzzle-pairs-game'
   },
   {
     id: 'p6',
-    image: '',
-    title: 'string',
+    image: readmeImage,
+    title: 'README creator',
     link: 'https://github.com/bcline01/readme-generator'
   },
 
@@ -56,4 +63,4 @@ function Portfolio({projects}) {
     );
   }
    
-
+export default Portfolio;
