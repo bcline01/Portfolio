@@ -19,7 +19,7 @@ const projects = [
   {
     id: 'p2',
     image: weatherImage,
-    title: 'Weather Forecase APP',
+    title: 'Weather Forecast APP',
     link: 'https://github.com/bcline01/weatherAPP'
   },
   {
