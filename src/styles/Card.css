@@ -4,9 +4,16 @@ body {
     background-color: #DDBEA9;
 }
 
-header {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
     background-color: #A5A58D;
-    padding: 55px;
+    height: 150px;
+}
+
+.header h1 {
+  margin: 10px;
 }
 
 footer {
@@ -14,6 +21,13 @@ footer {
     padding: 55px;
     display: flex;
     justify-content: center;
+}
+
+.nav-border {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+ margin: 10px;
 }
 
 /* Basic styles for the card */
