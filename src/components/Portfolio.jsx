@@ -1,11 +1,12 @@
 import Card from './Card';
 import React from 'react';
-import animalImage from '../assets/animal.png'
-import weatherImage from '../assets/weather.png'
-import employeeImage from '../assets/employee.png'
-import vehicleImage from '../assets/vehicle.png'
-import puzzleImage from '../assets/puzzle.png'
-import readmeImage from '../assets/readme.png'
+import animalImage from '../assets/animal.png';
+import weatherImage from '../assets/weather.png';
+import employeeImage from '../assets/employee.png';
+import vehicleImage from '../assets/vehicle.png';
+import puzzleImage from '../assets/puzzle.png';
+import readmeImage from '../assets/readme.png';
+import '../styles/Portfolio.css';
 
 
 
