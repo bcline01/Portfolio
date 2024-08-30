@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Form.css';
 
 function ContactForm() {
   // State to store input values

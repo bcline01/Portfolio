@@ -1,5 +1,19 @@
 /* Card.css */
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Make the Routes area (main content) grow to take available space */
+.App .main-content {
+  flex: 1; /* Grow to fill the space */
+}
+
+
+
+
 body {
     background-color: #DDBEA9;
 }
@@ -13,7 +27,9 @@ body {
 }
 
 .header h1 {
-  margin: 10px;
+  margin: 30px;
+  font-size: 75px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer {
@@ -37,6 +53,11 @@ footer {
     overflow: hidden; 
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Inward shadow */
     transition: transform 0.3s, box-shadow 0.3s; 
+    margin-top: 80px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    max-height: auto;
+    margin-left: 90px;
   }
   
   .card img {

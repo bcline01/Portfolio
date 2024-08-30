@@ -16,13 +16,15 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="main-content">
       <Routes>
-    <Route path="/" element={<Portfolio />} />
-    <Route path="/About" element={<About />} />
+    <Route path="/" element={<About />} />
+    <Route path="/Portfolio" element={<Portfolio />} />
     <Route path="/Contact" element={<Contact />} />
     <Route path="/Resume" element={<Resume />} />
     <Route path="*" element={<Error />} />
  </Routes>
+ </div>
       <Footer />
     </div>
   );

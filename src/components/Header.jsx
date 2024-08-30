@@ -6,13 +6,12 @@ import NavTabs from "./NavTabs";
 function Header() {
     return (
         <header className="header">
-            <h1>Hi! I'm Brooke</h1>
+            
+            <h1>Brooke Cline</h1>
             <div className="nav-border">
             <NavTabs/>
             </div>
 
-            
-          
         </header>
     )
 }
