@@ -21,7 +21,7 @@ const projects = [
     id: 'p2',
     image: weatherImage,
     title: 'Weather Forecast APP',
-    link: 'https://github.com/bcline01/weatherAPP'
+    link: 'https://weatherapp-cyn7.onrender.com'
   },
   {
     id: 'p3',
