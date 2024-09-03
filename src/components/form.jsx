@@ -19,7 +19,7 @@ function ContactForm() {
 
     // Validate full name
     if (!fullName) {
-      formErrors.fullName = 'Full Name is required.';
+      formErrors.fullName = 'Full Name is required!';
     }
 
     // Validate email
