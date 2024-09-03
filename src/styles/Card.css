@@ -86,3 +86,51 @@ footer {
     display: block;
   }
   
+
+  /* Adjustments for small screens (mobile) */
+@media (max-width: 600px) {
+  .header {
+      flex-direction: column; 
+      height: auto; 
+      padding: 10px; 
+  }
+
+  .header h1 {
+      font-size: 6vw; 
+  }
+
+  footer {
+      padding: 1rem; 
+  }
+}
+
+/* Adjustments for medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+      height: 120px; 
+      padding: 0 15px; 
+  }
+
+  .header h1 {
+      font-size: 5vw; 
+  }
+
+  footer {
+      padding: 1.5rem; 
+  }
+}
+
+/* Adjustments for large screens (desktops) */
+@media (min-width: 1025px) {
+  .header {
+      height: 150px; 
+  }
+
+  .header h1 {
+      font-size: 3rem; 
+  }
+
+  footer {
+      padding: 2rem; 
+  }
+}
