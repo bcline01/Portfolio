@@ -13,6 +13,7 @@ This Portfolio showcases my current projects that I have completed and gives inf
   6. [features](#features)
   7. [Contributors](#contribute)
   8. [Test](#test)
+  9. [Deploy] (#deploy)
 
   ## Installation
   Clone the respository from my **[GitHub](https://github.com/bcline01/Portfolio)**
@@ -55,3 +56,6 @@ This Portfolio showcases my current projects that I have completed and gives inf
 
   ## Tests
   To run tests, use the following command: npm run test
+
+  ## Deploy
+  Live Deployment using **[Netflify](https://portfolio-2e5387.netlify.app)**
