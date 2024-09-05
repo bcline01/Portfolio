@@ -39,7 +39,7 @@ const projects = [
     id: 'p5',
     image: puzzleImage,
     title: 'Puzzle Pairs',
-    link: 'https://github.com/bcline01/puzzle-pairs-game'
+    link: 'https://github.com/bcline01/Puzzlepairs'
   },
   {
     id: 'p6',
