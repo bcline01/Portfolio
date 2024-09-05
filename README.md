@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/110d1943-f8b5-40dd-9ec0-63accd1abcb1/deploy-status)](https://app.netlify.com/sites/portfolio-2e5387/deploys)
 # Portfolio ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 
