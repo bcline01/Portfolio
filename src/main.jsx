@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Home from './pages/Home';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       children: [
         {
           index: true,
+          element: <Home />,
+        },
+        {
+          path: '/About',
           element: <About />,
         },
         {

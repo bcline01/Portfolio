@@ -7,10 +7,10 @@ function Header() {
     return (
         <header className="header">
             
-            <h1>Brooke Cline</h1>
-            <div className="nav-border">
+            {/* <h1>Brooke Cline</h1>
+            <div className="nav-border"> */}
             <NavTabs/>
-            </div>
+            {/* </div> */}
 
         </header>
     )
