@@ -124,8 +124,8 @@ export const MyComponent = () => {
         variants={sidebar} // use the new sidebar animation here
         
         style={{
-          backgroundColor: '#ede0d4',
-          width: '25vw', // Full width to expand downwards
+          backgroundColor: '#d9d9d9',
+          width: '15vw', // Full width to expand downwards
           height: '100vh', // Full height for the downward effect
           position: 'fixed', // Fixed to the top
           top: '0',

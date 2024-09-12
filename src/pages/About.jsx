@@ -10,7 +10,7 @@ export default function About() {
       </div>
 
       <div className="col-lg-6" style={{marginTop: 85}}>
-      <div>
+      <div style={{color: 'lightgray'}}>
       Hello! I'm Brooke, transitioning into software engineering with a strong background in ICU nursing. My experience in critical care has equipped me with the ability to work well under pressure, pay meticulous attention to detail, and collaborate effectively as part of a team. These skills are invaluable in the tech industry, where precision, problem-solving, and teamwork are essential. 
 <br></br>
 <br></br>
