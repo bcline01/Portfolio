@@ -1,6 +1,7 @@
 import '../styles/Resume.css';
-import downloadIcon from '../assets/downlaod.png';
 import { useState } from 'react';
+import { BsCloudDownload } from "react-icons/bs";
+
 
 export default function Resume() {
 
@@ -13,13 +14,8 @@ export default function Resume() {
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}
      >
-                <img
-                    src={downloadIcon}
-                    alt="resume"
-                    style={{ width: '20px', 
-                      height: '20px',
-                      filter: isHovered ? 'brightness(0) saturate(100%) invert(64%) sepia(28%) saturate(3534%) hue-rotate(177deg) brightness(98%) contrast(88%)' : 'none', }}
-                />
+                <BsCloudDownload style={{color: 'white'}}/>
+                
             </a>
         <div className="resumeFront">Front End Proficiencies</div>
         <br></br>

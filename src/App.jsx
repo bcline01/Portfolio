@@ -1,6 +1,5 @@
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import React from "react";
 import Nav from './components/NavTabs';
 import About from './pages/About';
@@ -27,7 +26,7 @@ function App() {
     <Route path="*" element={<Error />} />
  </Routes>
  </div>
-      <Footer />
+      
     </div>
   );
 }
