@@ -75,10 +75,10 @@ function Portfolio() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // window.addEventListener("scroll", handleScroll);
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
 
   return (
