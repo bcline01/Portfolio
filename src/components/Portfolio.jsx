@@ -85,12 +85,14 @@ function Portfolio() {
     <div className='portfolio'>
       {projects.map((project, index) => (
         <section key={project.id} id={`p${index + 1}`} style={{ height: "100vh", background: '#3d5a80', padding: "50px" }}>
+
           <h2>{project.title}</h2>
           <Card
             image={project.image}
             title={project.title}
             link={project.link}
           />
+        
         </section>
       ))}
       <div className="scroll-buttons">
