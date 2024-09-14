@@ -7,6 +7,10 @@ import vehicleImage from '../assets/vehicle.png';
 import puzzleImage from '../assets/puzzle.png';
 import readmeImage from '../assets/readme.png';
 import '../styles/Portfolio.css';
+import { useState, useEffect } from 'react';
+import { FaAngleDoubleDown, FaAngleDoubleUp } from 'react-icons/fa';
+
+
 
 
 
@@ -50,24 +54,55 @@ const projects = [
 
 ]
 
+
+
 function Portfolio() {
+  const [currentSection, setCurrentSection] = useState(0);
+
+  const scrollToSection = (index) => {
+    const sectionId = `p${index + 1}`;
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setCurrentSection(index);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        scrollToSection(0); // Go back to the first section when scrolled to the bottom
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className='portfolio'>
-      <div className="container-fluid">
-        <div className="row">
-    {projects.map((project) => (
-      <div key={project.id} className="col-lg-4 col-md-6 mb-44">
-      <Card key={project.id}
-      image={project.image}
-      title={project.title}
-      link={project.link}
-      />
+      {projects.map((project, index) => (
+        <section key={project.id} id={`p${index + 1}`} style={{ height: "100vh", background: '#3d5a80', padding: "50px" }}>
+          <h2>{project.title}</h2>
+          <Card
+            image={project.image}
+            title={project.title}
+            link={project.link}
+          />
+        </section>
+      ))}
+      <div className="scroll-buttons">
+        <button className="scroll-button scroll-up" onClick={() => scrollToSection(Math.max(currentSection - 1, 0))}>
+          <FaAngleDoubleUp />
+        </button>
+        <button className="scroll-button scroll-down" onClick={() => scrollToSection(Math.min(currentSection + 1, projects.length - 1))}>
+          <FaAngleDoubleDown />
+        </button>
       </div>
-    ))}
     </div>
-    </div>
-    </div>
-    );
-  }
-   
+  );
+}
+
 export default Portfolio;

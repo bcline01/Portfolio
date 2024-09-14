@@ -4,10 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { MenuItem } from './MenuItems';
 import { FiAlignJustify } from "react-icons/fi";
 
-
-
-
-// Path component for animated menu lines
 const Path = (props) => (
   <motion.path
     fill="transparent"
@@ -18,7 +14,6 @@ const Path = (props) => (
   />
 );
 
-// MenuToggle component with animated SVG
 export const MenuToggle = ({ toggle }) => (
   <button
     onClick={toggle}
@@ -31,20 +26,19 @@ export const MenuToggle = ({ toggle }) => (
       left: '20px',
       zIndex: 1001,
       display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-     width: '40px', 
-    height: '40px',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '40px', 
+      height: '40px',
     }}
   >
     <FiAlignJustify style={{ fontSize: '24px' }}/>
   </button>
 );
 
-// Sidebar animation variants
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`, // Expanding from top-left (40px, 40px)
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
       type: 'spring',
       stiffness: 20,
@@ -52,7 +46,7 @@ const sidebar = {
     }
   }),
   closed: {
-    clipPath: 'circle(30px at 40px 40px)', // Small circle at top-left (40px, 40px)
+    clipPath: 'circle(30px at 40px 40px)',
     transition: {
       delay: 0.1,
       type: 'spring',
@@ -62,9 +56,6 @@ const sidebar = {
   }
 };
 
-
-// NavTabs component for your navigation links
-
 const menuItems = [
   { name: 'Home', path: '/' },
   { name: 'About Me', path: '/About' },
@@ -73,20 +64,20 @@ const menuItems = [
   { name: 'Resume', path: '/Resume' }
 ];
 
-const NavTabs = () => {
+const NavTabs = ({ setIsOpen }) => {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul style={{listStyleType: 'none'}}>
+    <ul style={{ listStyleType: 'none' }}>
       {menuItems.map((item, index) => (
-        <li key={item.path} style={{marginBottom: 10, width: 150}} >
+        <li key={item.path} style={{ marginBottom: 10, width: 150 }}>
           <Link
             to={item.path}
             className={currentPage === item.path ? 'nav-link active' : 'nav-link'}
             style={{ color: 'black', fontSize: '18px', textDecoration: 'none' }}
+            onClick={() => setIsOpen(false)}  
           >
             <MenuItem i={index} text={item.name} />
-            
           </Link>
         </li>
       ))}
@@ -94,8 +85,6 @@ const NavTabs = () => {
   );
 };
 
-
-// Main component with the animated menu and toggle button
 export const MyComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -104,24 +93,22 @@ export const MyComponent = () => {
       <motion.nav
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
-        variants={sidebar} // use the new sidebar animation here
-        
+        variants={sidebar}
         style={{
           backgroundColor: '#d9d9d9',
-          width: '15vw', // Full width to expand downwards
-          height: '100vh', // Full height for the downward effect
-          position: 'fixed', // Fixed to the top
+          width: '15vw',
+          height: '100vh',
+          position: 'fixed',
           top: '0',
           left: '0',
           overflow: 'hidden',
-          zIndex: 1000, // Behind the button
-          paddingTop: '80px', // Padding to push links down from the toggle button
+          zIndex: 1000,
+          paddingTop: '80px',
         }}
       >
-        <NavTabs />
+        <NavTabs setIsOpen={setIsOpen} /> {/* Pass setIsOpen to NavTabs */}
       </motion.nav>
-      
-      {/* Toggle button for opening/closing the menu */}
+
       <MenuToggle toggle={() => setIsOpen(prev => !prev)} />
     </div>
   );
