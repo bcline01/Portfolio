@@ -18,37 +18,43 @@ const projects = [
   {
     id: 'p1',
     image: animalImage,
-    title: 'Snuggle Squad',
+    title: 'Pet Adoption Website',
+    description: 'utilizing HTML, CSS, JavaScript',
     link: 'https://github.com/bcline01/Animal-Shelter-Project1'
   },
   {
     id: 'p2',
     image: weatherImage,
     title: 'Weather Forecast APP',
+    description: 'utilizing HTML',
     link: 'https://weatherapp-cyn7.onrender.com'
   },
   {
     id: 'p3',
     image: employeeImage,
     title: 'Postgres APP',
+    description: 'utilizing HTML, CSS, JavaScript',
     link: 'https://github.com/bcline01/employee_tracker'
   },
   {
     id: 'p4',
     image: vehicleImage,
     title: 'Vehicle Builder',
+    description: 'utilizing HTML, CSS, JavaScript',
     link: 'https://github.com/bcline01/vehicle-builder'
   },
   {
     id: 'p5',
     image: puzzleImage,
     title: 'Puzzle Pairs',
+    description: 'utilizing HTML, CSS, JavaScript',
     link: 'https://github.com/bcline01/Puzzlepairs'
   },
   {
     id: 'p6',
     image: readmeImage,
     title: 'README creator',
+    description: 'utilizing HTML, CSS, JavaScript',
     link: 'https://github.com/bcline01/readme-generator'
   },
 
@@ -82,17 +88,23 @@ function Portfolio() {
   }, []);
 
   return (
+    
     <div className='portfolio'>
       {projects.map((project, index) => (
         <section key={project.id} id={`p${index + 1}`} style={{ height: "100vh", background: '#3d5a80', padding: "50px" }}>
 
-          <h2>{project.title}</h2>
+          <div className='grid-container'>
+            <div className='title-description'>
+          <h2 style={{color: 'lightgray'}}>{project.title}</h2>
+            <ul>{project.description}</ul>
+            </div>
           <Card
             image={project.image}
             title={project.title}
             link={project.link}
           />
-        
+          
+        </div>
         </section>
       ))}
       <div className="scroll-buttons">
@@ -104,6 +116,7 @@ function Portfolio() {
         </button>
       </div>
     </div>
+    
   );
 }
 
