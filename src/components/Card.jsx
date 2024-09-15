@@ -8,7 +8,7 @@ function Card({ image, title, link }) {
           <img src={image} alt={title} />
         </a>
         <div className="card-body">
-        <h3 className="card-title">{title}</h3>
+        {/* <h3 className="card-title">{title}</h3> */}
       </div>
       </div>
     );

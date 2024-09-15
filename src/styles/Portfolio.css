@@ -1,28 +1,5 @@
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns, each taking equal space */
-  gap: 20px; /* Optional: Space between the title and image */
-  align-items: center; /* Center content vertically */
-}
 
-.grid-container h2 {
-  grid-column: 1; /* Title in the first column */
-  /* align-self: center;  */
-}
-
-.grid-container .card {
-  grid-column: 2; /* Image in the second column */
-  justify-self: center; /* Align the image to the right */
-}
-
-.title-description {
-  grid-column: 1; /* Title and description in the first column */
-  display: flex;
-  flex-direction: column; /* Stack title and description vertically */
-  margin-left: 60px;
-  justify-self: center;
-}
 
 .title-description h2 {
   margin-bottom: 10px; 
@@ -30,8 +7,8 @@
 
 .title-description ul {
   color: white; /* Optional: Style the description */
-  list-style: none; /* Optional: Remove bullet points */
-  padding: 0;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 
@@ -54,9 +31,9 @@
   }
   
   .scroll-button {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(217, 217, 217);
     border: none;
-    color: white;
+    color: black;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -67,6 +44,6 @@
   }
   
   .scroll-button:hover {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(217, 217, 217);
   }
   
