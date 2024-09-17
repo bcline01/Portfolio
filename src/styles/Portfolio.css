@@ -1,5 +1,7 @@
 
-
+.title-description h2 {
+  font-size: 45px;
+}
 
 .title-description h2 {
   margin-bottom: 10px; 
@@ -9,6 +11,7 @@
   color: white; /* Optional: Style the description */
   padding: 10px;
   margin-left: 10px;
+  font-size: 20px;
 }
 
 
@@ -35,12 +38,13 @@
     border: none;
     color: black;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 20px;
   }
   
   .scroll-button:hover {
