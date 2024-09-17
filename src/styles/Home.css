@@ -9,17 +9,17 @@
 
 .inner-headings {
     border: 0px solid #ddd;
-    height: 50px;
-    line-height: 50px;
-    font-size: 65px;
+    height: 80px; /* Slightly smaller height */
+    line-height: 80px; /* Adjust line-height accordingly */
+    font-size: 90px; /* Slightly smaller font size */
     text-transform: uppercase;
     overflow: hidden;
 }
 
 .inner-headings span {
     position: relative;
-    color: lightgray;
-    animation: animation 10s ease infinite;
+    color: #00b4d8;
+    animation: animation 8s ease infinite;
 }
 
 @keyframes animation {
@@ -31,21 +31,21 @@
         top: 0;
     }
     25% {
-        top: -50px;
+        top: -80px; /* Adjust for new text size */
     }
     45% {
-        top: -50px;
+        top: -80px;
     }
     50% {
-        top: -100px;
+        top: -160px; /* Adjust for new text size */
     }
     70% {
-        top: -100px;
+        top: -160px;
     }
     75% {
-        top: -150px;
+        top: -240px; /* Adjust for new text size */
     }
     95% {
-        top: -150px;
+        top: -240px;
     }
 }

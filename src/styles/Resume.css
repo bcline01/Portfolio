@@ -2,7 +2,29 @@
     font-size: 20px;
     margin-top: 20px;
 }
+
+
+
 .resumeBack {
     font-size: 20px;
     
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+    width: 700px;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: lightgray; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+
+.resume h1 {
+    color: black;
 }

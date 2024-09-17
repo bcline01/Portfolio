@@ -6,8 +6,7 @@ import '../styles/Home.css'
 export default function Home() {
     return (
       <div className="outer-headings">
-        <h1 style={{color: "lightgray"}}>
-          
+
           <div className="inner-headings">
             <span>
               Full-Stack Developer <br />
@@ -16,8 +15,6 @@ export default function Home() {
               Designer <br />
             </span>
           </div>
-        </h1>
-        
       </div>
     );
   }

@@ -8,13 +8,13 @@ export default function Resume() {
   const [isHovered, setIsHovered] = useState(false);
 
     return (
-      <div style={{color: 'lightgray'}}>
+      <div className='resume'>
         <h1>Resume</h1>
         <a href="https://drive.google.com/file/d/10M4PTfnmX7rbI2TdH-du16eDpYYxj4OR/view?usp=sharing" target="_blank" rel="noopener noreferrer"
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}
      >
-                <BsCloudDownload style={{color: 'white'}}/>
+                <BsCloudDownload style={{color: 'black', fontSize: '24px'}}/>
                 
             </a>
         <div className="resumeFront">Front End Proficiencies</div>
