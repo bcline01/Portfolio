@@ -97,7 +97,7 @@ function Portfolio() {
     
     <div className='portfolio'>
       {projects.map((project, index) => (
-        <section key={project.id} id={`p${index + 1}`} style={{ height: "100vh", background: '#002855', padding: "50px" }}>
+        <section key={project.id} id={`p${index + 1}`} style={{ height: "100vh", background: '#08193b', padding: "50px" }}>
 
           <div className='container'>
             <div className='row'>

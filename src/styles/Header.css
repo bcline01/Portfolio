@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-      background-color: #002855;
+      background-color: #08193b;
       height: 150px;
   }
   
@@ -26,9 +26,7 @@
       justify-content: center;
   }
 
-  /* body {
-    background-color: #002855;
-} */
+ 
   
     /* Adjustments for small screens (mobile) */
 @media (max-width: 600px) {
