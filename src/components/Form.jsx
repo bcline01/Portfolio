@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Form.css';
+import { useFormspark } from "@formspark/use-formspark";
+
+const FORMSPARK_FORM_ID = "sG3cXjuX3";
 
 function ContactForm() {
   // State to store input values
@@ -9,12 +12,19 @@ function ContactForm() {
 
   // State to store error messages
   const [errors, setErrors] = useState({});
+  
+  // State to track submission status
+  const [formStatus, setFormStatus] = useState('');
+
+  // Formspark hook
+  const [submit] = useFormspark({
+    formId: FORMSPARK_FORM_ID,
+  });
 
   // Handle form submission
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Reset errors
     let formErrors = {};
 
     // Validate full name
@@ -34,14 +44,19 @@ function ContactForm() {
       formErrors.message = 'Message is required.';
     }
 
-    // Update state with errors
     setErrors(formErrors);
 
-    // Check if form has no errors before submitting
-    // Object.keys returns an array of a given object's own enumerable property names (i.e., keys), in the same order as we get with a normal loop
+    // If there are no errors, submit the form to Formspark
     if (Object.keys(formErrors).length === 0) {
-      console.log('Form submitted successfully!', { fullName, email, message });
-      // You can add further logic here to handle the form data (e.g., send it to a server)
+      try {
+        await submit({ fullName, email, message });
+        setFormStatus('Form submitted successfully!');
+        setFullName('');
+        setEmail('');
+        setMessage('');
+      } catch (error) {
+        setFormStatus('Error submitting form. Please try again later.');
+      }
     }
   };
 
@@ -80,6 +95,8 @@ function ContactForm() {
       </div>
 
       <button type="submit">Submit</button>
+      {formStatus && <p>{formStatus}</p>}
+
     </form>
   );
 }

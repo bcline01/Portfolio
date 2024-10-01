@@ -14,12 +14,14 @@
     font-size: 90px; /* Slightly smaller font size */
     text-transform: uppercase;
     overflow: hidden;
+    padding-left: 8%;
 }
 
 .inner-headings span {
     position: relative;
     color: #00b4d8;
     animation: animation 8s ease infinite;
+    
 }
 
 @keyframes animation {
