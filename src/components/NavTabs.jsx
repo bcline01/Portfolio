@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MenuItem } from './MenuItems';
 import { FiAlignJustify } from "react-icons/fi";
+import '../styles/MenuItems.css';
 
 const Path = (props) => (
   <motion.path
@@ -68,22 +69,21 @@ const NavTabs = ({ setIsOpen }) => {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul style={{ listStyleType: 'none' }}>
-      {menuItems.map((item, index) => (
-        <li key={item.path} style={{ marginBottom: 10, width: 150 }}>
-          <Link
-            to={item.path}
-            className={currentPage === item.path ? 'nav-link active' : 'nav-link'}
-            style={{ color: 'black', fontSize: '18px', textDecoration: 'none' }}
-            onClick={() => setIsOpen(false)}  
-          >
-            <MenuItem i={index} text={item.name} />
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-};
+      <ul className="menu-list">
+        {menuItems.map((item, index) => (
+          <li key={item.path} className="menu-item">
+            <Link
+              to={item.path}
+              className={currentPage === item.path ? 'nav-link active' : 'nav-link'}
+              onClick={() => setIsOpen(false)}
+            >
+              <MenuItem i={index} text={item.name} />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    );
+  };
 
 export const MyComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,17 +94,7 @@ export const MyComponent = () => {
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         variants={sidebar}
-        style={{
-          backgroundColor: '#d9d9d9',
-          width: '15vw',
-          height: '100vh',
-          position: 'fixed',
-          top: '0',
-          left: '0',
-          overflow: 'hidden',
-          zIndex: 1000,
-          paddingTop: '80px',
-        }}
+       className='navbar'
       >
         <NavTabs setIsOpen={setIsOpen} /> {/* Pass setIsOpen to NavTabs */}
       </motion.nav>

@@ -1,6 +1,7 @@
 // MenuItems.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import '../styles/MenuItems.css';
 
 const variants = {
   open: {
@@ -22,7 +23,7 @@ const variants = {
 const colors = ["black", "black", "black", "black", "black"];
 
 export const MenuItem = ({ i, text }) => {
-  const style = { border: `1px solid ${colors[i]}` };
+  const style = { border: `1px solid ${colors[i]}`, width: '100px' };
   return (
     <motion.li
       variants={variants}
