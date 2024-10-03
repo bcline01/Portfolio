@@ -10,7 +10,7 @@ export default function Resume() {
     return (
       <div className='resume'>
         <h1>Resume</h1>
-        <a href="https://drive.google.com/file/d/10M4PTfnmX7rbI2TdH-du16eDpYYxj4OR/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+        <a href="https://docs.google.com/document/d/1x5r2sZ6MutfdyPeUiVCaNKQnz3b0Zo2_ExI66-wCmmY/export?format=pdf" target="_blank" rel="noopener noreferrer"
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}
      >
