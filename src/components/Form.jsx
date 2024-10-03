@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Form.css';
 import { useFormspark } from "@formspark/use-formspark";
 
 const FORMSPARK_FORM_ID = "sG3cXjuX3";
 
 function ContactForm() {
+ 
   // State to store input values
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [sparkError, setSparkError] = useState('');
 
+  useEffect(() => {
+    console.log(sparkError)
+  }, [sparkError])
   // State to store error messages
   const [errors, setErrors] = useState({});
   
@@ -17,7 +22,7 @@ function ContactForm() {
   const [formStatus, setFormStatus] = useState('');
 
   // Formspark hook
-  const [submit] = useFormspark({
+  const [submit, submitting] = useFormspark({
     formId: FORMSPARK_FORM_ID,
   });
 
@@ -55,18 +60,20 @@ function ContactForm() {
         setEmail('');
         setMessage('');
       } catch (error) {
+        setSparkError(error)
         setFormStatus('Error submitting form. Please try again later.');
       }
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form action="https://submit-form.com/sG3cXjuX3" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="fullName">Full Name:</label>
         <input
           type="text"
           id="fullName"
+          name="fullName"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
         />
@@ -78,6 +85,7 @@ function ContactForm() {
         <input
           type="email"
           id="email"
+          name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -88,6 +96,7 @@ function ContactForm() {
         <label htmlFor="message">Message:</label>
         <textarea
           id="message"
+          name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
