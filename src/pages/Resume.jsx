@@ -14,27 +14,44 @@ export default function Resume() {
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}
      >
-                <BsCloudDownload style={{color: 'black', fontSize: '24px'}}/>
+                <BsCloudDownload   style={{
+        color: 'black',
+        fontSize: '24px',
+        transform: isHovered ? 'scale(1.5)' : 'scale(1)',
+        transition: 'transform 0.3s ease', // Smooth transition
+      }}/>
                 
             </a>
         <div className="resumeFront">Front End Proficiencies</div>
-        <br></br>
+       
           <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Responsive Design</li>
+            <li>Typescript</li>
             <li>React</li>
             <li>Bootstrap</li>
+            <li>Sass</li>
           </ul>
-        <br></br>
+        
         <div className="resumeBack">Back End Proficiencies</div>
-        <br></br>
-        <ul>
+        
+        <ul id='back'>
             <li>API</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>MySQL</li>
+            <li>Node.JS</li>
+            <li>Express.JS</li>
+            <li>PostgresSQL</li>
+            <li>Sequelize</li>
+            <li>NoSQL- MongoDB</li>
+            <li>GraphQL</li>
+            <li>Apollo</li>
+            
+
+
+
+
+            
           </ul>
         
         </div>

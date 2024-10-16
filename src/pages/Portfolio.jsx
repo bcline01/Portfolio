@@ -23,7 +23,7 @@ const projects = [
     id: 'p1',
     image: bookshelfImage,
     title: 'BookShelf- Full Stack Application',
-    description: 'HTML, CSS, Typescript, Bycrpt, JWT, Sequelize, Axios, React, Bootstrap',
+    description: 'HTML, CSS, Typescript, Bcrypt, JWT, Sequelize, Axios, React, Bootstrap',
     summary: 'This is an online personal library for users to interact with. This application utilizes Google Books API as well as New York Times API.',
     link: 'https://github.com/bcline01/BookShelf'
   },
@@ -33,13 +33,13 @@ const projects = [
     title: 'Pet Adoption Website',
     description: 'HTML, CSS, JavaScript, Bootstrap',
     summary: 'This project is an animal adoption website designed to provide a seamless and engaging experience for prospective pet owners while delivering comprehensive information about each pet.',
-    link: 'https://github.com/bcline01/Animal-Shelter-Project1'
+    link: 'https://github.com/bcline01/Animal-Shelter'
   },
   {
     id: 'p3',
     image: puzzleImage,
     title: 'Puzzle Pairs',
-    description: 'HTML, CSS, JavaScript, React, Bootstrap',
+    description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion',
     summary: 'Puzzle Pairs is an interactive matching card game designed to challenge players by tracking both the time taken and the number of moves required to complete the game. This dynamic approach encourages efficiency and adds a layer of strategy, enhancing the overall gameplay experience.',
     link: 'https://github.com/bcline01/Puzzlepairs'
   },
@@ -49,7 +49,7 @@ const projects = [
     title: 'Weather Forecast APP- Full Stack Application',
     description: 'HTML, CSS, Bootstrap, JavaScript, Node.JS, Express.JS, Typescript, Open Weather API',
     summary: 'Using the Open Weather API, the user is able to view current and future weather conditions for multiple cities.',
-    link: 'https://weatherapp-cyn7.onrender.com'
+    link: 'https://github.com/bcline01/weatherAPP'
   },
   {
     id: 'p5',
@@ -71,7 +71,7 @@ const projects = [
     id: 'p7',
     image: kanbanImage,
     title: 'Kanban Board- Full Stack Application ',
-    description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bycrpt',
+    description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bcrypt',
     summary: 'It allows users to log in, manage tasks in a Kanban-style interface, and ensures that only authenticated users can access and manipulate data.',
     link: 'https://github.com/bcline01/kanban-board'
   },
