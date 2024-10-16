@@ -1,4 +1,4 @@
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./pages/Portfolio";
 import Header from "./components/Header";
 import React from "react";
 import Nav from './components/NavTabs';
