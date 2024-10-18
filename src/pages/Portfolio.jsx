@@ -22,63 +22,63 @@ const projects = [
   {
     id: 'p1',
     image: bookshelfImage,
-    title: 'BookShelf- Full Stack Application',
+    title: 'BookShelf- Full Stack',
     description: 'HTML, CSS, Typescript, Bcrypt, JWT, Sequelize, Axios, React, Bootstrap',
     summary: 'This is an online personal library for users to interact with. This application utilizes Google Books API as well as New York Times API.',
     link: 'https://github.com/bcline01/BookShelf'
   },
   {
     id: 'p2',
-    image: animalImage,
-    title: 'Pet Adoption Website',
-    description: 'HTML, CSS, JavaScript, Bootstrap',
-    summary: 'This project is an animal adoption website designed to provide a seamless and engaging experience for prospective pet owners while delivering comprehensive information about each pet.',
-    link: 'https://github.com/bcline01/Animal-Shelter'
+    image: kanbanImage,
+    title: 'Kanban Board- Full Stack',
+    description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bcrypt',
+    summary: 'It allows users to log in, manage tasks in a Kanban-style interface, and ensures that only authenticated users can access and manipulate data.',
+    link: 'https://github.com/bcline01/kanban-board'
   },
   {
     id: 'p3',
-    image: puzzleImage,
-    title: 'Puzzle Pairs',
-    description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion',
-    summary: 'Puzzle Pairs is an interactive matching card game designed to challenge players by tracking both the time taken and the number of moves required to complete the game. This dynamic approach encourages efficiency and adds a layer of strategy, enhancing the overall gameplay experience.',
-    link: 'https://github.com/bcline01/Puzzlepairs'
-  },
-  {
-    id: 'p4',
     image: weatherImage,
-    title: 'Weather Forecast APP- Full Stack Application',
+    title: 'Weather Forecast- Full Stack',
     description: 'HTML, CSS, Bootstrap, JavaScript, Node.JS, Express.JS, Typescript, Open Weather API',
     summary: 'Using the Open Weather API, the user is able to view current and future weather conditions for multiple cities.',
     link: 'https://github.com/bcline01/weatherAPP'
   },
   {
+    id: 'p4',
+    image: animalImage,
+    title: 'Pet Adoption- Front End',
+    description: 'HTML, CSS, JavaScript, Bootstrap',
+    summary: 'This project is an animal adoption website designed to provide a seamless and engaging experience for prospective pet owners while delivering comprehensive information about each pet.',
+    link: 'https://github.com/bcline01/Animal-Shelter'
+  },
+  {
     id: 'p5',
-    image: socialImage,
-    title: 'Social Network',
-    description: 'Typescript, Node.JS, Express.JS, MongoDB with Mongoose ODM',
-    summary: 'The API supports CRUD operations for users, thoughts, reactions, and friendships, offering the core functionalities required for a social network.',
-    link: 'https://github.com/bcline01/social-network'
+    image: puzzleImage,
+    title: 'Puzzle Pairs- Front End',
+    description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion',
+    summary: 'Puzzle Pairs is an interactive matching card game designed to challenge players by tracking both the time taken and the number of moves required to complete the game. This dynamic approach encourages efficiency and adds a layer of strategy, enhancing the overall gameplay experience.',
+    link: 'https://github.com/bcline01/Puzzlepairs'
   },
   {
     id: 'p6',
     image: candidateImage,
-    title: 'Candidate Search',
+    title: 'Candidate Search- Front End',
     description: 'HTML, CSS, Bootstrap, Typescript, Node.JS, React, Sequelize',
     summary: 'Created an application that allows the user to pull a random github user with public information and either add them to their saved user list or skip and continue their search.',
     link: 'https://github.com/bcline01/candidate-search'
   },
   {
     id: 'p7',
-    image: kanbanImage,
-    title: 'Kanban Board- Full Stack Application ',
-    description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bcrypt',
-    summary: 'It allows users to log in, manage tasks in a Kanban-style interface, and ensures that only authenticated users can access and manipulate data.',
-    link: 'https://github.com/bcline01/kanban-board'
+    image: socialImage,
+    title: 'Social Network- Back End',
+    description: 'Typescript, Node.JS, Express.JS, MongoDB with Mongoose ODM',
+    summary: 'The API supports CRUD operations for users, thoughts, reactions, and friendships, offering the core functionalities required for a social network.',
+    link: 'https://github.com/bcline01/social-network'
   },
   {
     id: 'p8',
     image: employeeImage,
-    title: 'Postgres APP',
+    title: 'Postgres APP- Back End',
     description: 'HTML, Typescript, Node.JS, PostgresSQL, Inquierer',
     summary: 'This command-line application allows business owners to efficiently manage their companys employee database. It provides a user-friendly interface for viewing, adding, and updating information about departments, roles, and employees within a company.',
     link: 'https://github.com/bcline01/employee_tracker'
@@ -86,7 +86,7 @@ const projects = [
   {
     id: 'p9',
     image: vehicleImage,
-    title: 'Vehicle Builder',
+    title: 'Vehicle Builder- Back End',
     description: 'HTML, CSS, Node.JS, Typescript, Inquirer',
     summary: 'A command-line application that allows users to create, select, and interact with different types of vehicles. Users can choose to create a new vehicle or select an existing one, provide details about the vehicle, and then perform various actions with it.',
     link: 'https://github.com/bcline01/vehicle-builder'
@@ -94,7 +94,7 @@ const projects = [
   {
     id: 'p10',
     image: readmeImage,
-    title: 'README creator',
+    title: 'README creator- Back End',
     description: 'Node.JS, Typescript',
     summary: 'README creator is a user-friendly application designed to generate professional README files effortlessly. This tool serves as a centralized platform where users can quickly and easily create well-structured README files for their projects.',
     link: 'https://github.com/bcline01/readme-generator'
