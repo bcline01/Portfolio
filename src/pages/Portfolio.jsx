@@ -5,7 +5,6 @@ import weatherImage from '../assets/weather.png';
 import employeeImage from '../assets/postgres.png';
 import vehicleImage from '../assets/vehicle.png';
 import puzzleImage from '../assets/pp.png';
-import readmeImage from '../assets/readme.png';
 import '../styles/Portfolio.css';
 import { useState, useEffect } from 'react';
 import { FaAngleDoubleDown, FaAngleDoubleUp } from 'react-icons/fa';
@@ -13,6 +12,7 @@ import bookshelfImage from '../assets/bookshelf.png';
 import candidateImage from '../assets/candidate.png';
 import kanbanImage from '../assets/kanban.png';
 import socialImage from '../assets/social.png';
+import googleImage from '../assets/googlesearch.png';
 
 
 
@@ -37,6 +37,14 @@ const projects = [
   },
   {
     id: 'p3',
+    image: googleImage,
+    title: 'Google Book Search- Full Stack',
+    description: 'HTML, CSS, Bootstrap,React, Node.JS, Express.JS, Typescript, bcrypt, JWT, MongoDB, GraphQL',
+    summary: 'Using the Open Weather API, the user is able to view current and future weather conditions for multiple cities.',
+    link: 'https://github.com/bcline01/weatherAPP'
+  },
+  {
+    id: 'p4',
     image: weatherImage,
     title: 'Weather Forecast- Full Stack',
     description: 'HTML, CSS, Bootstrap, JavaScript, Node.JS, Express.JS, Typescript, Open Weather API',
@@ -44,7 +52,7 @@ const projects = [
     link: 'https://github.com/bcline01/weatherAPP'
   },
   {
-    id: 'p4',
+    id: 'p5',
     image: animalImage,
     title: 'Pet Adoption- Front End',
     description: 'HTML, CSS, JavaScript, Bootstrap',
@@ -52,7 +60,7 @@ const projects = [
     link: 'https://github.com/bcline01/Animal-Shelter'
   },
   {
-    id: 'p5',
+    id: 'p6',
     image: puzzleImage,
     title: 'Puzzle Pairs- Front End',
     description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion',
@@ -60,7 +68,7 @@ const projects = [
     link: 'https://github.com/bcline01/Puzzlepairs'
   },
   {
-    id: 'p6',
+    id: 'p7',
     image: candidateImage,
     title: 'Candidate Search- Front End',
     description: 'HTML, CSS, Bootstrap, Typescript, Node.JS, React, Sequelize',
@@ -68,7 +76,7 @@ const projects = [
     link: 'https://github.com/bcline01/candidate-search'
   },
   {
-    id: 'p7',
+    id: 'p8',
     image: socialImage,
     title: 'Social Network- Back End',
     description: 'Typescript, Node.JS, Express.JS, MongoDB with Mongoose ODM',
@@ -76,7 +84,7 @@ const projects = [
     link: 'https://github.com/bcline01/social-network'
   },
   {
-    id: 'p8',
+    id: 'p9',
     image: employeeImage,
     title: 'Postgres APP- Back End',
     description: 'HTML, Typescript, Node.JS, PostgresSQL, Inquierer',
@@ -84,20 +92,12 @@ const projects = [
     link: 'https://github.com/bcline01/employee_tracker'
   },
   {
-    id: 'p9',
+    id: 'p10',
     image: vehicleImage,
     title: 'Vehicle Builder- Back End',
     description: 'HTML, CSS, Node.JS, Typescript, Inquirer',
     summary: 'A command-line application that allows users to create, select, and interact with different types of vehicles. Users can choose to create a new vehicle or select an existing one, provide details about the vehicle, and then perform various actions with it.',
     link: 'https://github.com/bcline01/vehicle-builder'
-  },
-  {
-    id: 'p10',
-    image: readmeImage,
-    title: 'README creator- Back End',
-    description: 'Node.JS, Typescript',
-    summary: 'README creator is a user-friendly application designed to generate professional README files effortlessly. This tool serves as a centralized platform where users can quickly and easily create well-structured README files for their projects.',
-    link: 'https://github.com/bcline01/readme-generator'
   },
 
 ]
