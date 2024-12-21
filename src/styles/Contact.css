@@ -1,7 +1,41 @@
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: lightgray;
-    padding-bottom: 20px;
+/* Custom Styling for Icons */
+.contact-icon {
+    color: #333; /* Set default icon color */
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-icon:hover {
+    color: #87adc6; /* Change color on hover */
+}
+
+.contact-icon:active {
+    color: #333; /* Revert to default color on click */
+}
+
+.work {
+    font-family: 'raleway', sans-serif; /* Set font family */
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .contact-icon {
+        font-size: 24px; /* Slightly smaller icons on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-icon {
+        font-size: 28px; /* Adjust icon size for very small screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller heading for smaller screens */
+    }
 }

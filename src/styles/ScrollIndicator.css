@@ -1,0 +1,43 @@
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;  /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);  /* Center horizontally */
+    font-size: 36px;
+    color: #BDC3C7;  /* Arrow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    animation: slide 1s ease-in-out infinite;  /* Apply animation */
+}
+
+.arrow {
+    animation: bounce 1.5s ease-in-out infinite;  /* Bounce animation for the arrow */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);  /* Bounce up and down */
+    }
+}
+
+/* Optional: Fade-in and slide animation */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); /* Start slightly below */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);  /* Slide into place */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px); /* End slightly below */
+    }
+}

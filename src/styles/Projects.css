@@ -1,0 +1,156 @@
+/* Ensuring the entire project container is centered */
+.my-projects {
+  
+    min-height: 100vh; /* Ensures section2 takes full viewport height */
+    padding: 20px;
+    background-color: #f2f3f4; /* Temporary background color for visibility */
+    color: black; /* Ensure text is readable */
+}
+
+
+
+.project-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Styling the heading */
+
+
+.project-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'raleway', sans-serif;
+  letter-spacing: 2px;
+ text-transform: uppercase;
+  font-size: 5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 0;
+}
+
+.project-item-container {
+  background-color: rgba(228, 225, 225, 0.953); /* Set a background color */
+  padding: 20px; /* Add padding around the content */
+  text-align: center; /* Center the text */
+  border-radius: 10px; /* Optional: Round the corners of the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Owl Carousel settings: Ensure the carousel is centered */
+.owl-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Each item in the carousel should be centered and stacked */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.item-link {
+  width: 100%; /* Ensures the <a> tag fills the width of the parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.item-image {
+  width: 100%; /* Adjust the width to control image size */
+  max-width: 20%; /* Optional: prevent the image from getting too large */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid black; /* Set border color, width, and style */
+}
+
+/* Styling for titles: centered below the image */
+.item-title {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #333;
+  font-family: 'raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 0;
+}
+
+/* Styling for description text */
+.item-description {
+  font-size: 1.5rem;
+  color: #666;
+  max-width: 80%;
+  margin: 0 auto; /* Center the description */
+  text-align: center;
+  font-family: 'raleway', sans-serif;
+}
+.owl-dot {
+  background-color: black; /* Black color for inactive dots */
+  border-radius: 50%; /* Circular dots */
+  width: 10px; /* Dot size */
+  height: 10px; /* Dot size */
+  margin: 0 5px; /* Space between dots */
+}
+
+/* Optional: To make active dot color black as well, remove the .active style */
+.owl-dot.active {
+  background-color: white; /* Keep the active dot black */
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: black;
+}
+
+@media (max-width: 480px) {
+  .project-heading {
+    font-size: 3.5rem;
+  }
+
+  .item-title {
+    font-size: 2.5rem;
+  }
+
+  .item-description {
+    font-size: 1.5rem;
+  }
+  .item-image {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .project-heading {
+    font-size: 4rem;
+  }
+
+  .item-title {
+    font-size: 2.5rem;
+  }
+
+  .item-description {
+    font-size: 1.5rem;
+  }
+  .item-image {
+    max-width: 40%;
+  }
+}
+

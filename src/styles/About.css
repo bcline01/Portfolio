@@ -1,0 +1,42 @@
+/* Optional: Custom Styles */
+.border-left {
+    border-left: 2px solid black; /* Change the thickness of the line */
+    height: 100%; /* Make sure the line spans the full height of the container */
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.welcome {
+    font-size: 5rem;
+    font-family: 'raleway', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        font-size: 4rem;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (min-width: 738px) {
+    .welcome {
+        font-size: 3rem;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (min-width: 1026px) {
+    .welcome {
+        font-size: 5rem;
+        justify-content: center;
+        display: flex;
+    }
+}

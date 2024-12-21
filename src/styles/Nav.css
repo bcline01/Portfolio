@@ -1,0 +1,88 @@
+/* Nav.css */
+
+/* Fixed position for the navigation on the left side of the screen */
+.nav-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column; /* Stack the icons vertically */
+    align-items: center; /* Center the icons horizontally */
+    gap: 20px; /* Space between icons */
+    background-color: transparent; /* Optional: background can be set if needed */
+    z-index: 1000;
+
+}
+
+/* Style for each icon */
+.nav-contact-icon {
+    color: rgb(68, 66, 66); /* Icon color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer;
+}
+
+.nav-contact-icon:hover {
+    color: #87adc6; /* LinkedIn blue on hover */
+}
+.nav-contact-icon:active {
+    color: rgb(68, 66, 66);
+}
+
+.high-contrast {
+    background-color: #333333!important;
+    color: white !important;
+}
+.high-contrast .welcome {
+    color: white !important;
+}
+.high-contrast .owl-theme .owl-dots .owl-dot.active span{
+    background-color: white !important;
+}
+.high-contrast .my-projects {
+    background-color: rgb(30, 30, 30) !important;
+}
+.high-contrast .project-heading {
+    color: white !important;
+}
+.high-contrast .item-title {
+    color: white !important;
+}
+.high-contrast .item-description {
+    color: white !important;
+}
+.high-contrast .contact-icon {
+    color: white !important;
+}
+.high-contrast .contact-icon:hover {
+    color: #0077b6!important;
+}
+.high-contrast .nav-contact-icon {
+    color: white !important;
+}
+.high-contrast .nav-contact-icon:hover {
+    color: #0077b6!important;
+}
+
+.high-contrast #section2 {
+    border-bottom: 2px solid white !important;
+}
+.high-contrast #section2 {
+    border-top: 2px solid white !important;
+}
+.high-contrast #section3 {
+    border-bottom: 2px solid white !important;
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%; /* Optional: make the nav container span the full width */
+        flex-direction: row; /* Optional: make the icons horizontal if needed */
+        justify-content: center; /* Center the icons horizontally */
+        gap: 20px; /* Adjust spacing as needed */
+        padding: 10px 0; /* Add some padding for visual appeal */
+    }
+}
