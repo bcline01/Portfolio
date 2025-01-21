@@ -5,6 +5,7 @@ import Projects from '../components/Projects';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Nav from '../components/Nav';
+import Current from '../components/Current';
 
 const Home: React.FC = () => {
    
@@ -31,6 +32,9 @@ const Home: React.FC = () => {
 
         <div id='section2'>
             <About />
+            </div>
+            <div>
+                <Current />
             </div>
             <div id='section3'>
             <Projects />

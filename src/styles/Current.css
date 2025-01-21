@@ -1,0 +1,126 @@
+.current-container {
+    /* margin: 10px auto; */
+    text-align: center;
+    /* height: 600px; */
+    background-color: #f2f3f4;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'raleway', sans-serif;
+    letter-spacing: 2px;
+   text-transform: uppercase;
+    font-size: 4.5rem;
+    color: #333;
+    margin-bottom: 6%;
+    font-weight: 0;
+    margin-top: 30px;
+}
+
+
+
+.projects-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align the text under the image */
+    justify-content: center;
+    flex: 1;
+    min-width: 300px; /* Ensure responsiveness */
+    max-width: 48%; /* Keep columns balanced */
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the text content */
+}
+
+.project-image-one {
+    width: 400px; 
+    height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+.project-image-two {
+    width: 500px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+
+/* .project-image-one,
+.project-image-two {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+} */
+
+.divider {
+    width: 2px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+@media (max-width: 1025px) {
+    .projects-row {
+        flex-direction: column; /* Stack the rows vertically */
+        align-items: center;
+    }
+    .project-item {
+        align-items: center; /* Center-align each project item */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px; /* Divider becomes horizontal */
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 1025px) {
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        margin: 0 auto 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .project-image-one {
+        width: 300px;
+        height: 300px;
+    }
+    .project-image-two {
+        width: 320px;
+        height: 200px;
+    }
+    .heading {
+        font-size: 3.5rem;
+    }
+}

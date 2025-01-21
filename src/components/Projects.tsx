@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
   return (
     <div className='my-projects'>
     <div className="project-container">
-      <div className="project-heading">My Projects</div>
+      <div className="project-heading">Projects</div>
       {/* <div className='project-item-container'> */}
       <OwlCarousel className="owl-theme" {...options}>
         {projects.map((project) => (
