@@ -8,7 +8,7 @@ import '../styles/Contact.css';
 const Contact: React.FC = () => {
     return (
         <div className="container my-5">
-            <div style={{fontFamily:'raleway', fontSize: '5rem', textTransform:'uppercase', letterSpacing:'2px'}} className="text-center">Contact Me</div>
+            <div  className="text">Contact Me</div>
 
             <div className="text-center mb-4 ">
                 <p className='work'>I am available for work! Feel free to reach out to me:</p>

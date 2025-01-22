@@ -6,6 +6,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Nav from '../components/Nav';
 import Current from '../components/Current';
+import Pic from '../assets/pic.png'
 
 const Home: React.FC = () => {
    
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
         <video autoPlay muted loop className="video-background">
             <source src={Video} type="video/mp4" />
         </video>
+        <img className='pic' src={Pic} alt="Profile" />
         
         <div className="outer-headings">
             <div className="inner-headings">
