@@ -16,6 +16,13 @@
     font-size: 1.1rem;
 }
 
+.underline {
+    text-decoration: underline solid black;
+    /* color: #085bc7;  */
+    font-style: italic;
+    font-weight: 400;
+}
+
 .welcome {
     font-size: 5rem;
     font-family: 'raleway', sans-serif;

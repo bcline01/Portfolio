@@ -17,7 +17,7 @@ const About: React.FC = () => {
             <>
             With a solid foundation in{' '} 
             <span className='italic'>JavaScript, TypeScript, Node, Express, React, Python, Angular, PostgreSQL, MongoDB, GraphQL, and Sequalize.</span> I have experience working on a variety of projects, from building dynamic web applications to developing command-line tools. My recent work includes a{' '}
-            <span className='italic'>Full Stack</span> Book Club application using React, TypeScript and MongoDB, as well as a Front End application using Angular 19, Tailwind and Sass. My Neweset Projects are listed below in my current projects section.
+            <span className='underline'>Full Stack Book Club application using React, TypeScript and MongoDB, as well as a Front End application using Angular 19, Tailwind and Sass.</span> My Neweset Projects are listed below in my current projects section.
             </>
             <br></br>
             <br></br>
