@@ -14,7 +14,11 @@ const About: React.FC = () => {
                     Hello! I'm Brooke, transitioning into software engineering with a strong background in ICU nursing. My experience in critical care has equipped me with the ability to work well under pressure, pay meticulous attention to detail, and collaborate effectively as part of a team. These skills are invaluable in the tech industry, where precision, problem-solving, and teamwork are essential.
             <br></br>
             <br></br>
-            With a solid foundation in JavaScript, Node.js, TypeScript, PostgreSQL and React, I have experience working on a variety of projects, from building dynamic web applications to developing command-line tools. My recent work includes a weather dashboard application using TypeScript and the OpenWeather API, a command-line application for managing databases with Node.js and Inquirer, as well as a kids card matching game using React and JavaScript.
+            <>
+            With a solid foundation in{' '} 
+            <span className='italic'>JavaScript, TypeScript, Node, Express, React, Python, Angular, PostgreSQL, MongoDB, GraphQL, and Sequalize.</span> I have experience working on a variety of projects, from building dynamic web applications to developing command-line tools. My recent work includes a{' '}
+            <span className='italic'>Full Stack</span> Book Club application using React, TypeScript and MongoDB, as well as a Front End application using Angular 19, Tailwind and Sass. My Neweset Projects are listed below in my current projects section.
+            </>
             <br></br>
             <br></br>
             When I'm not coding, you can find me hiking, baking or spending time with my family. I'm excited about the opportunity to bring my skills and enthusiasm to a dynamic team and contribute to innovative projects.                    </p>
