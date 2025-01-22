@@ -11,8 +11,9 @@ const Current: React.FC = () => {
             <div className="projects-row">
                 {/* Project 1 */}
                 <div className="project-item">
-                    <img src={DocPic} alt="Project 1" className="project-image-one" />
-                    <div className="project-text">
+                <a href="https://github.com/bcline01/doc-site" target="_blank" rel="noopener noreferrer">
+            <img src={DocPic} alt="Project 1" className="project-image-one" />
+        </a>                    <div className="project-text">
                         <h2 style={{fontFamily:'raleway'}}>Chiropractic Website</h2>
                         <p style={{fontFamily:'raleway'}}>An intuitive and user-focused website designed for the leading medical practice in the region. It delivers an engaging and inclusive experience for users while empowering doctors with seamless tools to efficiently update and communicate with their patients.</p>
                    <p style={{fontFamily:'raleway'}}> Technologies: React, Typescript, Node, Express, Bootstrap, CSS</p>
@@ -36,3 +37,4 @@ const Current: React.FC = () => {
 };
 
 export default Current;
+// https://github.com/bcline01/doc-site
