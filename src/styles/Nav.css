@@ -33,6 +33,15 @@
     background-color: #333333!important;
     color: white !important;
 }
+.high-contrast .current-container {
+    background-color: #333333!important;
+}
+.high-contrast .heading {
+    color: white !important;
+}
+.high-contrast .italic {
+    color: hsl(205, 79%, 74%);
+}
 .high-contrast .welcome {
     color: white !important;
 }
@@ -50,6 +59,12 @@
 }
 .high-contrast .item-description {
     color: white !important;
+}
+.high-contrast .border-left {
+    border-left: 2px solid white !important;
+}
+.high-contrast .underline {
+    text-decoration: underline solid white !important;
 }
 .high-contrast .contact-icon {
     color: white !important;

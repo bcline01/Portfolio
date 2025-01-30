@@ -35,7 +35,7 @@ const Home: React.FC = () => {
         <div id='section2'>
             <About />
             </div>
-            <div>
+            <div id='section3'>
                 <Current />
             </div>
             <div id='section3'>
