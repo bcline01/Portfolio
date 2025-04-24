@@ -35,9 +35,7 @@ const Current: React.FC = () => {
                   </div>
                 </div>
       
-                <p style={{ fontFamily: 'Raleway' }}>
-                  Technologies: React, TypeScript, Node, Express, Bootstrap, CSS
-                </p>
+               
               </div>
             </div>
       
