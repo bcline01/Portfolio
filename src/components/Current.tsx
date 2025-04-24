@@ -12,7 +12,7 @@ const Current: React.FC = () => {
             {/* Project 1 */}
             <div className="project-item">
               <a
-                href="https://github.com/bcline01/chiro-gnv"
+                href="https://chirosofgnv.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
