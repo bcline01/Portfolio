@@ -1,40 +1,85 @@
 import React from 'react';
 import '../styles/Current.css';
-import DocPic from '../assets/doc2.png';
-import Haven from '../assets/haven.png';
+import DocPic from '../assets/chiro.png';
+import Haven from '../assets/podyar.png';
 
 const Current: React.FC = () => {
     return (
         <div className="current-container">
-            <div className='heading'>My Current Projects</div>
-
-            <div className="projects-row">
-                {/* Project 1 */}
-                <div className="project-item">
-                <a href="https://github.com/bcline01/doc-site" target="_blank" rel="noopener noreferrer">
-            <img src={DocPic} alt="Project 1" className="project-image-one" />
-        </a>                    <div className="project-text">
-                        <h2 style={{fontFamily:'raleway'}}>Chiropractic Website</h2>
-                        <p style={{fontFamily:'raleway'}}>An intuitive and user-focused website designed for the leading medical practice in the region. It delivers an engaging and inclusive experience for users while empowering doctors with seamless tools to efficiently update and communicate with their patients.</p>
-                   <p style={{fontFamily:'raleway'}}> Technologies: React, Typescript, Node, Express, Bootstrap, CSS</p>
-                        </div>
+          <div className="heading">My Current Projects</div>
+      
+          <div className="projects-row">
+            {/* Project 1 */}
+            <div className="project-item">
+              <a
+                href="https://github.com/bcline01/chiro-gnv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={DocPic} alt="Project 1" className="project-image-one" />
+              </a>
+              <div className="project-text">
+                <h2 style={{ fontFamily: 'Raleway' }}>Chiropractic Website</h2>
+                <p style={{ fontFamily: 'Raleway' }}>
+                  An intuitive and user-focused website designed for the leading medical practice in the region. It delivers an engaging and inclusive experience for users while empowering doctors with seamless tools to efficiently update and communicate with their patients.
+                </p>
+      
+                <div className="tech-stack">
+                  <div className="tech-row">
+                    <span className="tech-label">Frontend:</span>
+                    <span className="tech-detail">React, TypeScript, Vite, Bootstrap, Framer Motion, React Slick, Axios, CSS</span>
+                  </div>
+                  <div className="tech-row">
+                    <span className="tech-label">Design Focus:</span>
+                    <span className="tech-detail">Accessible components, responsive UI, interactive animations, clean typography</span>
+                  </div>
                 </div>
-                {/* <div className="divider" /> */}
-
-                {/* Project 2 */}
-                <div className="project-item">
-                    <img src={Haven} alt="Project 2" className="project-image-two" />
-                    <div className="project-text">
-                        <h2 style={{fontFamily:'raleway'}}>The Haven</h2>
-                        <p style={{ fontFamily: 'Raleway' }}>A user-centric website featuring innovative layouts and custom plugins, crafted to deliver a visually stunning and seamless experience.</p>
-                        <p style={{fontFamily:'raleway'}}> Technologies: WordPress, PHP</p>
-
-                    </div>
-                </div>
+      
+                <p style={{ fontFamily: 'Raleway' }}>
+                  Technologies: React, TypeScript, Node, Express, Bootstrap, CSS
+                </p>
+              </div>
             </div>
+      
+            {/* Project 2 */}
+            <div className="project-item">
+              <a
+                href="https://app.podyar.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Haven} alt="Project 2" className="project-image-one" />
+              </a>
+              <div className="project-text">
+                <h2 style={{ fontFamily: 'Raleway' }}>PodYar</h2>
+                <p style={{ fontFamily: 'Raleway' }}>
+                  This project aims to automate the generation of podcast conversations between a user and our very own AI Host. The core idea is to leverage AI technologies to create a realistic and engaging dialogue based on the user's professional background and the AI Host's public persona.
+                </p>
+      
+                <div className="tech-stack">
+                  <div className="tech-row">
+                    <span className="tech-label">Backend:</span>
+                    <span className="tech-detail">
+                      Azure (Web Apps, Container Registry, Blob Storage, AI Foundry), PostgreSQL, FastAPI, Docker, CI/CD, Python, YAML, OpenAI (All Models + Responses API), Perplexity API, Voice Integration, Modern RAG Pipelines, Arize AI (Telemetry), OAuth (Google & LinkedIn)
+                    </span>
+                  </div>
+                  <div className="tech-row">
+                    <span className="tech-label">Architecture:</span>
+                    <span className="tech-detail">
+                      Cloud-native, containerized microservices with robust authentication and observability
+                    </span>
+                  </div>
+                  <div className="tech-row">
+                    <span className="tech-label">Frontend:</span>
+                    <span className="tech-detail">Next.js, TypeScript, Tailwind CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    );
-};
+      );
+    }      
 
 export default Current;
 // https://github.com/bcline01/doc-site
