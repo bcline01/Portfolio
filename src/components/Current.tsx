@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Current.css';
 import DocPic from '../assets/chiro.png';
-import Haven from '../assets/podyar.png';
+import Real from '../assets/realtalk.png';
 
 const Current: React.FC = () => {
     return (
@@ -42,14 +42,14 @@ const Current: React.FC = () => {
             {/* Project 2 */}
             <div className="project-item">
               <a
-                href="https://app.podyar.com/"
+                href="https://talk.harimasoor.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={Haven} alt="Project 2" className="project-image-one" />
+                <img src={Real} alt="Project 2" className="project-image-one" />
               </a>
               <div className="project-text">
-                <h2 style={{ fontFamily: 'Raleway' }}>PodYar</h2>
+                <h2 style={{ fontFamily: 'Raleway' }}>RealTalk</h2>
                 <p style={{ fontFamily: 'Raleway' }}>
                   This project aims to automate the generation of podcast conversations between a user and our very own AI Host. The core idea is to leverage AI technologies to create a realistic and engaging dialogue based on the user's professional background and the AI Host's public persona.
                 </p>
